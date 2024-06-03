@@ -299,6 +299,7 @@ section {
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
+  transition: transform 0.3s, box-shadow 0.3s;
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
@@ -317,20 +318,21 @@ section {
 .text-container{
   text-align: justify;
 }
+
 /* EXPERIENCE SECTION */
 
-#experience {
+#experience, #skills {
   position: relative;
 }
 
-.experience-sub-title {
+.experience-sub-title, .skill-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
-.experience-details-container {
+.experience-details-container, .skill-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -380,6 +382,11 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.details-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* CONTACT */
