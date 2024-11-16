@@ -100,7 +100,7 @@ a:hover {
   background-color: white;
   width: fit-content;
   max-height: 0;
-  overflow: hidden;
+  overflow: scroll;
   transition: all 0.3 ease-in-out;
 }
 
