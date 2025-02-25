@@ -41,6 +41,7 @@
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
+    z-index: -1;
   }
   .about-containers {
     margin-top: 0;
@@ -90,6 +91,7 @@
     width: auto;
     height: 46vw;
     justify-content: center;
+    z-index: -1;
   }
   .section__text__p2 {
     font-size: 1.25rem;
