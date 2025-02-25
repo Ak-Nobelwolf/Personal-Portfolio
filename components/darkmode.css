@@ -1,0 +1,234 @@
+/* Dark mode styles */
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --hover-color: #525252;
+  --section-bg: #f8f8f8;
+  --card-bg: #ffffff;
+  --btn-bg: #ffffff;
+  --border-color: #000000;
+}
+
+[data-theme="dark"] {
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --hover-color: #9e9e9e;
+  --section-bg: #2d2d2d;
+  --card-bg: #333333;
+  --btn-bg: #333333;
+  --border-color: #ffffff;
+}
+
+/* Dark mode specific styles */
+[data-theme="dark"] body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .nav-links a {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .logo {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .details-container {
+  background: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .cert-card {
+  background: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .color-container {
+  background: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .btn-color-2 {
+  background: var(--btn-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .btn-color-2:hover {
+  background: var(--hover-color);
+}
+
+[data-theme="dark"] nav,
+[data-theme="dark"] footer {
+  background-color: var(--section-bg);
+}
+
+[data-theme="dark"] .hamburger-icon span {
+  background-color: var(--text-color);
+}
+
+[data-theme="dark"] .menu-links {
+  background-color: var(--section-bg);
+}
+
+[data-theme="dark"] .menu-links a {
+  color: var(--text-color);
+}
+
+/* Theme toggle button styles */
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-icon {
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    position: relative;
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+
+.toggle-icon::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.toggle-icon::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+/* Dark mode specific styles for toggle */
+[data-theme="dark"] .toggle-icon::before {
+    border-color: #ffffff;
+    transform: scale(1.4);
+}
+
+[data-theme="dark"] .toggle-icon::after {
+    border-color: #ffffff;
+    transform: scale(0.6);
+}
+
+[data-theme="dark"] .toggle-icon {
+    transform: scale(0.9);
+}
+
+/* Additional text color fixes for dark mode */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] p,
+[data-theme="dark"] li,
+[data-theme="dark"] span,
+[data-theme="dark"] .section__text__p1,
+[data-theme="dark"] .section__text__p2,
+[data-theme="dark"] .title,
+[data-theme="dark"] .experience-sub-title,
+[data-theme="dark"] .skill-sub-title,
+[data-theme="dark"] .details-container h3,
+[data-theme="dark"] .details-container p,
+[data-theme="dark"] .article-container h3,
+[data-theme="dark"] .article-container p,
+[data-theme="dark"] .cert-card p,
+[data-theme="dark"] .cert-date,
+[data-theme="dark"] .project-title,
+[data-theme="dark"] .nav-links-container a,
+[data-theme="dark"] .cert-link,
+[data-theme="dark"] footer p,
+[data-theme="dark"] .menu-links li,
+[data-theme="dark"] .about-containers p,
+[data-theme="dark"] .text-container p,
+[data-theme="dark"] .experience-details-container p,
+[data-theme="dark"] .skill-title,
+[data-theme="dark"] .skill-details-container p {
+    color: var(--text-color);
+}
+
+/* Arrow icon fixes for dark mode */
+[data-theme="dark"] .arrow,
+[data-theme="dark"] .icon.arrow,
+[data-theme="dark"] .icon_arrow,
+[data-theme="dark"] img[onclick*="location.href"][src*="arrow"] {
+    filter: invert(1);
+    opacity: 0.9;
+}
+
+/* Icon adjustments for dark mode */
+[data-theme="dark"] .icon {
+    filter: invert(1);
+}
+
+[data-theme="dark"] #socials-container .icon {
+    filter: invert(1);
+}
+
+/* Contact section fixes for dark mode */
+[data-theme="dark"] .contact-info-container {
+    background: transparent;
+    border: none;
+}
+
+[data-theme="dark"] .contact-info-container p,
+[data-theme="dark"] .contact-info-container a,
+[data-theme="dark"] .contact-info-upper-container a {
+    color: var(--text-color);
+    background: transparent;
+}
+
+[data-theme="dark"] .contact-icon,
+[data-theme="dark"] .email-icon,
+[data-theme="dark"] .contact-info-container img {
+    filter: invert(1);
+}
+
+/* Basic media query for mobile toggle */
+@media only screen and (max-width: 768px) {
+    #darkModeToggle {
+        display: none;
+    }
+
+    #darkModeToggleMobile {
+        display: flex;
+    }
+}
+
+/* Hide toggle button for screens below 1024px */
+@media only screen and (max-width: 1024px) {
+    #darkModeToggle,
+    #darkModeToggleMobile,
+    .theme-toggle {
+        display: none;
+    }
+}
+
+/* Ensure smooth transitions */
+body, nav, .details-container, .cert-card, .color-container,
+.btn-color-2, .menu-links, .icon, .contact-info-container,
+h1, h2, h3, p, a, li, span {
+    transition: all 0.3s ease;
+}
