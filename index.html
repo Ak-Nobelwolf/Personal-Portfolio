@@ -4,16 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Akshay Tadakod - Senior Software Developer Portfolio showcasing experience in Java, React, and full-stack development" />
+    <meta name="keywords" content="software developer, java developer, react developer, full stack developer, web development" />
     <link rel="icon" href="assets/portfolio.png" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./components/style.css" />
     <link rel="stylesheet" href="./components/mediaqueries.css" />
+    <link rel="stylesheet" href="./components/darkmode.css" />
   </head>
   <body>
     <nav id="desktop-nav">
       <div class="logo">Akshay Tadakod</div>
       <div>
         <ul class="nav-links">
+          <li>
+            <button id="darkModeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+              <div class="toggle-icon"></div>
+            </button>
+          </li>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -26,6 +34,9 @@
     <nav id="hamburger-nav">
       <div class="logo">Akshay Tadakod</div>
       <div class="hamburger-menu">
+        <button id="darkModeToggleMobile" class="theme-toggle" aria-label="Toggle dark mode">
+          <div class="toggle-icon"></div>
+        </button>
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
@@ -46,6 +57,7 @@
         <img
           src="./components/assets/profile-pic.png"
           alt="Akshay Tadakod profile picture"
+          loading="eager"
         />
       </div>
       <div class="section__text">
@@ -55,11 +67,11 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./components/assets/Akshay_Tadakod_4.5Yrs_Exp_Senior_Cloud_PLM_Developer_CV.pdf')"
+            onclick="window.open('./components/assets/Akshay_Tadakod_4.5Yrs_Exp_Senior_Cloud_PLM_Developer_CV.pdf', '_blank')"
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1" onclick="window.open('./#contact', '_blank')">
             Contact Info
           </button>
         </div>
@@ -68,13 +80,15 @@
             src="./components/assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/akshaytadakod/'"
+            onclick="window.open('https://www.linkedin.com/in/akshaytadakod/', '_blank')"
+            rel="noopener"
           />
           <img
             src="./components/assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/Ak-Nobelwolf'"
+            onclick="window.open('https://github.com/Ak-Nobelwolf', '_blank')"
+            rel="noopener"
           />
         </div>
       </div>
@@ -372,67 +386,70 @@
           <img src="./components/assets/oracle.svg" alt="Oracle" class="cert-icon" />
           <p>Oracle Product Lifecycle Management 2023 Certified Implementation Professional</p>
           <p class="cert-date">Issued: April 2024</p>
-          <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=D830E29010065B5DE50DED8E27F85D53EAF00C8EE2A5B12A38F8FF936DB80935" target="_blank" class="cert-link">View Certificate</a>
+          <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=D830E29010065B5DE50DED8E27F85D53EAF00C8EE2A5B12A38F8FF936DB80935" 
+             target="_blank"
+             rel="noopener"
+             class="cert-link">View Certificate</a>
         </div>
         <div class="cert-card">
           <img src="./components/assets/oracle.svg" alt="Oracle" class="cert-icon" />
           <p>Oracle Cloud Infrastructure 2023 Certified Foundations Associate</p>
           <p class="cert-date">Issued: August 2023</p>
-          <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=C7B416948716750638B019F1AABEE69AE6CB7FEFF3CE90B751B018D7C41EFA25" target="_blank" class="cert-link">View Certificate</a>
+          <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=C7B416948716750638B019F1AABEE69AE6CB7FEFF3CE90B751B018D7C41EFA25" target="_blank" rel="noopener" class="cert-link">View Certificate</a>
         </div>
         <div class="cert-card">
           <img src="./components/assets/oracle.svg" alt="Oracle" class="cert-icon" />
           <p>Oracle Cloud Infrastructure 2023 AI Certified Foundations Associate</p>
           <p class="cert-date">Issued: February 2024</p>
-          <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=167B19031669AE0C34AA0CF326F942A60E626F3E0F814555E33D711102AF0E34" target="_blank" class="cert-link">View Certificate</a>
+          <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=167B19031669AE0C34AA0CF326F942A60E626F3E0F814555E33D711102AF0E34" target="_blank" rel="noopener" class="cert-link">View Certificate</a>
         </div>
         <div class="cert-card">
           <img src="./components/assets/oracle.svg" alt="Oracle" class="cert-icon" />
           <p>Oracle Cloud Infrastructure 2024 Generative AI Certified Professional</p>
           <p class="cert-date">Issued: July 2024</p>
-          <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=1CDB8F659F18E81862A0BB26317199F39B2CEC12D181D136C602A8E2558465DC" target="_blank" class="cert-link">View Certificate</a>
+          <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=1CDB8F659F18E81862A0BB26317199F39B2CEC12D181D136C602A8E2558465DC" target="_blank" rel="noopener" class="cert-link">View Certificate</a>
         </div>
         <div class="cert-card">
           <img src="./components/assets/oracle.svg" alt="Organization 3" class="cert-icon" />
           <p>Oracle Cloud Data Management 2023 Certified Foundations Associate</p>
           <p class="cert-date">Issued: February 2024</p>
-          <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=73A24B9B2D8A7E9AED27434A57E1BBC70849A3EB0DF5D3B4A77FADC1DEE5FCFE" target="_blank" class="cert-link">View Certificate</a>
+          <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=73A24B9B2D8A7E9AED27434A57E1BBC70849A3EB0DF5D3B4A77FADC1DEE5FCFE" target="_blank" rel="noopener" class="cert-link">View Certificate</a>
         </div>
         <div class="cert-card">
           <img src="./components/assets/meta.png" alt="Meta" class="cert-icon" />
           <p>Meta Front-End Developer Specialization</p>
           <p class="cert-date">Issued: October 2023</p>
-          <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/CJVYC4J99JDG" target="_blank" class="cert-link">View Certificate</a>
+          <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/CJVYC4J99JDG" target="_blank" rel="noopener" class="cert-link">View Certificate</a>
         </div>
         <div class="cert-card">
           <img src="./components/assets/infosys.svg" alt="Infosys" class="cert-icon" />
           <p>Infosys Certified Front End Web Developer</p>
           <p class="cert-date">Issued: June 2023</p>
-          <a href="https://github.com/Ak-Nobelwolf/Personal-Portfolio/blob/main/components/assets/Infosys%20Certified%20Front%20End%20Web%20Developer.pdf" target="_blank" class="cert-link">View Certificate</a>
+          <a href="https://github.com/Ak-Nobelwolf/Personal-Portfolio/blob/main/components/assets/Infosys%20Certified%20Front%20End%20Web%20Developer.pdf" target="_blank" rel="noopener" class="cert-link">View Certificate</a>
         </div>
         <div class="cert-card">
           <img src="./components/assets/infosys.svg" alt="Infosys" class="cert-icon" />
           <p>Infosys Global Agile Developer Certification</p>
           <p class="cert-date">Issued: February 2023</p>
-          <a href="https://github.com/Ak-Nobelwolf/Personal-Portfolio/blob/main/components/assets/Infosys%20Global%20Agile%20Developer%20Certification.pdf" target="_blank" class="cert-link">View Certificate</a>
+          <a href="https://github.com/Ak-Nobelwolf/Personal-Portfolio/blob/main/components/assets/Infosys%20Global%20Agile%20Developer%20Certification.pdf" target="_blank" rel="noopener" class="cert-link">View Certificate</a>
         </div>
         <div class="cert-card">
           <img src="./components/assets/infosys.svg" alt="Infosys" class="cert-icon" />
           <p>Infosys Certified CPQ Developer</p>
           <p class="cert-date">Issued: February 2023</p>
-          <a href="https://github.com/Ak-Nobelwolf/Personal-Portfolio/blob/main/components/assets/Infosys%20Certified%20CPQ%20Developer.pdf" target="_blank" class="cert-link">View Certificate</a>
+          <a href="https://github.com/Ak-Nobelwolf/Personal-Portfolio/blob/main/components/assets/Infosys%20Certified%20CPQ%20Developer.pdf" target="_blank" rel="noopener" class="cert-link">View Certificate</a>
         </div>
         <div class="cert-card">
           <img src="./components/assets/infosys.svg" alt="Infosys" class="cert-icon" />
           <p>Infosys Certified .NET Microservices Developer Fundamentals</p>
           <p class="cert-date">Issued: February 2023</p>
-          <a href="https://github.com/Ak-Nobelwolf/Personal-Portfolio/blob/main/components/assets/Infosys%20Certified%20.NET%20Microservices%20Developer%20Fundamentals.pdf" target="_blank" class="cert-link">View Certificate</a>
+          <a href="https://github.com/Ak-Nobelwolf/Personal-Portfolio/blob/main/components/assets/Infosys%20Certified%20.NET%20Microservices%20Developer%20Fundamentals.pdf" target="_blank" rel="noopener" class="cert-link">View Certificate</a>
         </div>
         <div class="cert-card">
           <img src="./components/assets/ibm.svg" alt="IBM" class="cert-icon" />
           <p>Docker Essentials: A Developer Introduction</p>
           <p class="cert-date">Issued: May 2024</p>
-          <a href="https://courses.cognitiveclass.ai/certificates/fe07feb9369440b9a01a02c7f6092228" target="_blank" class="cert-link">View Certificate</a>
+          <a href="https://courses.cognitiveclass.ai/certificates/fe07feb9369440b9a01a02c7f6092228" target="_blank" rel="noopener" class="cert-link">View Certificate</a>
         </div>
       </div>
       <img
@@ -461,13 +478,15 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Ak-Nobelwolf/Little-Lemon'"
+                onclick="window.open('https://github.com/Ak-Nobelwolf/Little-Lemon', '_blank')"
+                rel="noopener"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://ak-nobelwolf.github.io/Little-Lemon/'"
+                onclick="window.open('https://ak-nobelwolf.github.io/Little-Lemon/', '_blank')"
+                rel="noopener"
               >
                 Live Demo
               </button>
@@ -487,13 +506,15 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Ak-Nobelwolf/Text-Utilities'"
+                onclick="window.open('https://github.com/Ak-Nobelwolf/Text-Utilities', '_blank')"
+                rel="noopener"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://ak-nobelwolf.github.io/Text-Utilities/'"
+                onclick="window.open('https://ak-nobelwolf.github.io/Text-Utilities/', '_blank')"
+                rel="noopener"
               >
                 Live Demo
               </button>
@@ -513,13 +534,15 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Ak-Nobelwolf/Personal-Portfolio'"
+                onclick="window.open('https://github.com/Ak-Nobelwolf/Personal-Portfolio', '_blank')"
+                rel="noopener"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://ak-nobelwolf.github.io/Personal-Portfolio/'"
+                onclick="window.open('https://ak-nobelwolf.github.io/Personal-Portfolio/', '_blank')"
+                rel="noopener"
               >
                 Live Demo
               </button>
@@ -539,7 +562,8 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Ak-Nobelwolf/Excel-Comparison'"
+                onclick="window.open('https://github.com/Ak-Nobelwolf/Excel-Comparison', '_blank')"
+                rel="noopener"
               >
                 Github
               </button>
@@ -571,7 +595,7 @@
             class="icon contact-icon email-icon"
           />
           <p>
-            <a href="mailto:examplemail@gmail.com">akshaytadakod@gmail.com</a>
+            <a href="mailto:akshaytadakod@gmail.com" target="_blank" rel="noopener">akshaytadakod@gmail.com</a>
           </p>
         </div>
         <div class="contact-info-container">
@@ -581,7 +605,7 @@
             class="icon contact-icon"
           />
           <p>
-            <a href="https://www.linkedin.com/in/akshaytadakod/">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/akshaytadakod/" target="_blank" rel="noopener">LinkedIn</a>
           </p>
         </div>
       </div>

@@ -102,4 +102,44 @@
   }
 }
 
+/* Media query for screens smaller than or equal to 768px */
+@media (max-width: 768px) {
+    .icon_arrow { /* Class for the arrow icon */
+        display: none; /* Hide the arrow icon */
+    }
+
+    #your-container-id { /* Replace with the actual ID or class for the container */
+        padding: 0; /* Remove extra space */
+        margin: 0; /* Remove any margin if necessary */
+    }
+
+    /* Footer adjustments */
+    footer { /* Assuming this is the footer element */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        padding: 1rem; /* Add padding for spacing */
+    }
+
+    footer nav { /* Style for navigation links in the footer */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        gap: 0.5rem; /* Add space between items */
+    }
+
+    footer nav a { /* Style for footer navigation links */
+        font-size: 1rem; /* Adjust font size for better visibility */
+        text-align: center; /* Center text */
+        width: 100%; /* Make links full width */
+    }
+}
+
+/* Media query for screens smaller than or equal to 1024px */
+@media (max-width: 1024px) {
+    .icon_arrow { /* Class for the arrow icon */
+        display: none; /* Hide the arrow icon */
+    }
+}
+
 
