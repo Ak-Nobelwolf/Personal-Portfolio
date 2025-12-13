@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Akshay Tadakod - Senior Software Developer Portfolio showcasing experience in Java, React, and full-stack development" />
-    <meta name="keywords" content="software developer, java developer, react developer, full stack developer, web development" />
+    <meta name="description" content="Akshay Tadakod - Senior Software Developer Portfolio showcasing experience in Java, React, and full-stack development with 4.5+ years of expertise" />
+    <meta name="keywords" content="software developer, java developer, react developer, full stack developer, web development, portfolio, senior developer, frontend developer, backend developer" />
+    <meta name="author" content="Akshay Tadakod" />
+    <meta property="og:title" content="Akshay Tadakod - Senior Software Developer" />
+    <meta property="og:description" content="Portfolio showcasing full-stack development projects, certifications, and technical skills" />
+    <meta property="og:type" content="website" />
     <link rel="icon" href="assets/portfolio.png" />
-    <title>My Portfolio</title>
+    <title>Akshay Tadakod - Senior Software Developer Portfolio</title>
     <link rel="stylesheet" href="./components/style.css" />
     <link rel="stylesheet" href="./components/mediaqueries.css" />
     <link rel="stylesheet" href="./components/darkmode.css" />
@@ -79,16 +83,18 @@
           <img
             src="./components/assets/linkedin.png"
             alt="My LinkedIn profile"
-            class="icon"
+            class="icon social-icon"
             onclick="window.open('https://www.linkedin.com/in/akshaytadakod/', '_blank')"
             rel="noopener"
+            title="LinkedIn Profile"
           />
           <img
             src="./components/assets/github.png"
             alt="My Github profile"
-            class="icon"
+            class="icon social-icon"
             onclick="window.open('https://github.com/Ak-Nobelwolf', '_blank')"
             rel="noopener"
+            title="GitHub Profile"
           />
         </div>
       </div>
@@ -464,17 +470,25 @@
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div class="details-container color-container project-card">
             <div class="article-container">
               <img
                 src="./components/assets/Project1.png"
-                alt="Project 1"
+                alt="Little Lemon Restaurant Website"
                 class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">
               Little Lemon Restaurant Website
             </h2>
+            <p class="project-description">
+              A modern restaurant website with table reservation system, menu showcase, and responsive design for optimal user experience.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -492,17 +506,25 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container project-card">
             <div class="article-container">
               <img
                 src="./components/assets/Project2.png"
-                alt="Project 2"
+                alt="Text Utilities React Project"
                 class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">
               Text Utilities React Project
             </h2>
+            <p class="project-description">
+              A comprehensive text manipulation tool with features like uppercase/lowercase conversion, text analysis, word counter, and dark mode support.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Bootstrap</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -520,17 +542,25 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container project-card">
             <div class="article-container">
               <img
                 src="./components/assets/Project3.png"
-                alt="Project 3"
+                alt="Personal Portfolio - HTML, CSS & Js"
                 class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">
               Personal Portfolio - HTML, CSS & Js
             </h2>
+            <p class="project-description">
+              A responsive portfolio website showcasing projects, skills, certifications, and professional experience with dark mode support and smooth animations.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -548,17 +578,25 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container project-card">
             <div class="article-container">
               <img
                 src="./components/assets/Project4.png"
-                alt="Project 4"
+                alt="Excel Comparison Tool - Java Project"
                 class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">
               Excel Comparison Tool - Java Project
             </h2>
+            <p class="project-description">
+              A powerful desktop application for comparing Excel files, detecting differences, and generating detailed comparison reports with highlighted changes.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">Java</span>
+              <span class="tech-badge">Apache POI</span>
+              <span class="tech-badge">Swing</span>
+            </div>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -567,12 +605,6 @@
               >
                 Github
               </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://ak-nobelwolf.github.io/'"
-              >
-                Live Demo
-              </button> -->
             </div>
           </div>
         </div>
@@ -587,26 +619,79 @@
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./components/assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>
-            <a href="mailto:akshaytadakod@gmail.com" target="_blank" rel="noopener">akshaytadakod@gmail.com</a>
-          </p>
+      <div class="contact-content-wrapper">
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./components/assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p>
+              <a href="mailto:akshaytadakod@gmail.com" target="_blank" rel="noopener">akshaytadakod@gmail.com</a>
+            </p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./components/assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p>
+              <a href="https://www.linkedin.com/in/akshaytadakod/" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+          </div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./components/assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.linkedin.com/in/akshaytadakod/" target="_blank" rel="noopener">LinkedIn</a>
-          </p>
+        <div class="contact-form-container">
+          <h2 class="form-title">Send a Message</h2>
+          <form id="contactForm" class="contact-form" onsubmit="return handleFormSubmit(event)">
+            <div class="form-group">
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Your Name" 
+                required 
+                class="form-input"
+              />
+              <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Your Email" 
+                required 
+                class="form-input"
+              />
+              <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <input 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                placeholder="Subject" 
+                required 
+                class="form-input"
+              />
+              <span class="error-message" id="subjectError"></span>
+            </div>
+            <div class="form-group">
+              <textarea 
+                id="message" 
+                name="message" 
+                placeholder="Your Message" 
+                required 
+                rows="5" 
+                class="form-input"
+              ></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-color-1 submit-btn">Send Message</button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
         </div>
       </div>
     </section>
