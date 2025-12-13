@@ -10,6 +10,9 @@
   #projects {
     height: fit-content;
   }
+  .project-card {
+    min-height: 550px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -51,7 +54,7 @@
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: fit-content;
   }
   #profile {
     height: 83vh;
@@ -101,6 +104,26 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .contact-form-container {
+    padding: 1.5rem;
+  }
+  .form-input {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+  .project-card {
+    min-height: auto;
+  }
+  .tech-stack {
+    gap: 0.3rem;
+  }
+  .tech-badge {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+  .project-description {
+    font-size: 0.85rem;
   }
 }
 

@@ -226,9 +226,44 @@
     }
 }
 
+/* Contact form dark mode styles */
+[data-theme="dark"] .contact-form-container {
+    background: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .form-title {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .form-input {
+    background: var(--section-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .form-input::placeholder {
+    color: #999;
+}
+
+[data-theme="dark"] .form-input:focus {
+    border-color: var(--text-color);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+}
+
+/* Tech badge dark mode */
+[data-theme="dark"] .tech-badge {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Project description dark mode */
+[data-theme="dark"] .project-description {
+    color: #ccc;
+}
+
 /* Ensure smooth transitions */
 body, nav, .details-container, .cert-card, .color-container,
 .btn-color-2, .menu-links, .icon, .contact-info-container,
-h1, h2, h3, p, a, li, span {
+h1, h2, h3, p, a, li, span, .form-input, .contact-form-container {
     transition: all 0.3s ease;
 }

@@ -511,6 +511,209 @@ article .icon {
   height: 2.5rem;
 }
 
+/* PROJECT ENHANCEMENTS */
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+}
+
+.project-description {
+  margin: 1rem 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 0;
+}
+
+.tech-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.tech-badge:hover {
+  transform: translateY(-2px);
+}
+
+/* SOCIAL ICONS ANIMATION */
+
+.social-icon {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.15) rotate(5deg);
+}
+
+/* CONTACT FORM STYLES */
+
+.contact-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-form-container {
+  background: white;
+  border-radius: 2rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.form-title {
+  text-align: center;
+  color: rgb(85, 85, 85);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-input {
+  padding: 1rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  border-radius: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: rgb(53, 53, 53);
+  box-shadow: 0 0 0 3px rgba(53, 53, 53, 0.1);
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.85rem;
+  display: none;
+}
+
+.error-message.show {
+  display: block;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.form-status {
+  text-align: center;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: none;
+}
+
+.form-status.success {
+  display: block;
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.form-status.error {
+  display: block;
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* SMOOTH ANIMATIONS */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.details-container {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.cert-card {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* ENHANCED BUTTON HOVER EFFECTS */
+
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
 /* FOOTER SECTION */
 
 footer {
